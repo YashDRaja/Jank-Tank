@@ -157,8 +157,9 @@
     });
 
 
-    /*function sendToPi(code) {
-        $.ajax({
+    function sendToPi(code) {
+	alert("EXECUTING!!");
+   /*     $.ajax({
             type:"POST",
             cache: false,
             dataType: "json",
@@ -167,8 +168,8 @@
             success: function(data) {
                 
             }
-        });
-    }*/
+        });*/
+    }
     function realTimeUpdate(event){
         var feedBackCode = Blockly.Python.workspaceToCode(workspace)
         document.getElementById('pythonCodeUpdate').value = `#forward(x,y) tank moves forward for x seconds with y power\n
